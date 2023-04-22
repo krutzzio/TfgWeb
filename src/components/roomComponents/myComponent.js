@@ -19,13 +19,27 @@ export default {
 
 
       showNot1: false,
+      showNot2: false,
+      showNot3: false,
+      showNot4: false,
+      showNot5: false,
+      showNot6: false,
+
+      notSelect: Math.random()*5,
     };
   },
 
   
   mounted(){
     setTimeout(()=>{
-      this.showNot1 = true
+      if(this.notSelect > 0 && this.notSelect < 4){
+        this.showNot1= false;
+        this.showNot2= false;
+        this.showNot3= false;
+        this.showNot4= true;
+        this.showNot5= true;
+        this.showNot6= true;
+      }
     }, 5000)
   },
 

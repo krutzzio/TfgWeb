@@ -12,10 +12,12 @@ body {
 }
 
 .btn{
-  position: fixed;
+  position: absolute;
   background-color: transparent;
   border: none;
   cursor: pointer;
+  outline: solid 1px black;
+
 }
 .btn.Bed{
   width: 250px;
@@ -66,6 +68,41 @@ body {
 }
 
 .not.n1{
+  top: 100px;
+  left: 500px;
+  width: 300px;
+  height: 100px;
+}
+
+.not.n2{
+  top: 100px;
+  left: 500px;
+  width: 300px;
+  height: 100px;
+}
+
+.not.n3{
+  top: 100px;
+  left: 500px;
+  width: 300px;
+  height: 100px;
+}
+
+.not.n4{
+  top: 100px;
+  left: 500px;
+  width: 300px;
+  height: 100px;
+}
+
+.not.n5{
+  top: 100px;
+  left: 500px;
+  width: 300px;
+  height: 100px;
+}
+
+.not.n6{
   top: 100px;
   left: 500px;
   width: 300px;

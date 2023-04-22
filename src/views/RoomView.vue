@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="room">
-    <p>Contador proves: {{ cont }}</p>
+    <p>Contador proves: {{ cont }} {{ notSelect }}</p>
 
     <button
       class="btn Bed"

@@ -1,10 +1,11 @@
 <template>
 </template>
+  
+  <script>
+ 
+  </script>
+  
+  <style>
 
-<script>
-// @ is an alias to /src
-export default {
-
-}
-</script>
-
+  </style>
+  

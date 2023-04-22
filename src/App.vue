@@ -1,8 +1,9 @@
 <template>
-  <nav>
+  <nav class="start">
     <router-link to="/room" v-if="$route.path != '/room'">Room</router-link>
+    <router-view/>
   </nav>
-  <router-view/>
+
 </template>
 
 <script>
@@ -30,4 +31,16 @@ export default {
 }
 </script>
 
+<style scoped>
+  .start {
+  position: relative;
+  background-color: rgb(65, 17, 3);
+  outline: solid 1px black;
+  height: 600px;
+  width: 800px;
+  text-align: center;
+  justify-content: center;
+ 
+}
+</style>
 
