@@ -1,9 +1,6 @@
 <template>
   <nav>
-    <router-link to="/" v-if="$route.path == '/'">Home</router-link> |
-    <router-link to="/room">Room</router-link> |
-    <button @click="conSum"></button>
-    <p>Contador proves: {{ b }}</p>
+    <router-link to="/room" v-if="$route.path != '/room'">Room</router-link>
   </nav>
   <router-view/>
 </template>
@@ -32,3 +29,5 @@ export default {
   }
 }
 </script>
+
+
