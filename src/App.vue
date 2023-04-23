@@ -1,16 +1,20 @@
 <template>
   <nav class="start">
-    <router-link to="/room" v-if="$route.path != '/room'">Room</router-link>
-    <router-view/>
-  </nav>
 
+    <router-view/>    
+  </nav>
+  <router-link to="/">Home</router-link>|
+    <router-link to="/room"  v-if="$route.path != '/room'" >Room</router-link>|
+    <router-link to="/info">Info</router-link>
 </template>
 
 <script>
+
 export default {
   setup() {
     return{};    
   },
+
   data(){
     return{
       b: 0,
@@ -24,9 +28,7 @@ export default {
     },
   },
   methods: {
-    conSum() {
-      this.b = this.b + 1;
-    },
+
   }
 }
 </script>
@@ -34,7 +36,7 @@ export default {
 <style scoped>
   .start {
   position: relative;
-  background-color: rgb(65, 17, 3);
+  background-color: rgb(253, 253, 253);
   outline: solid 1px black;
   height: 600px;
   width: 800px;
