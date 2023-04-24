@@ -4,7 +4,7 @@
     <router-view/>    
   </nav>
   <router-link to="/">Home</router-link>|
-    <router-link to="/room"  v-if="$route.path != '/room'" >Room</router-link>|
+  <router-link to="/room"  v-if="$route.path != '/room'" >Room</router-link>|
     <router-link to="/info">Info</router-link>
 </template>
 

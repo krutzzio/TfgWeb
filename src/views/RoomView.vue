@@ -1,6 +1,5 @@
 <template>
   <div class="room">
-    <p>Contador proves: {{ cont }} {{ notSelect }}</p>
     <button
       class="btn Bed"
       @click="
@@ -36,6 +35,12 @@
       class="btn Door"
       @click="
         showPopupIt('showPopUp','spDoor');
+      "
+    ></button>
+    <button
+      class="btn Meditate"
+      @click="
+        showPopupIt('showPopUp','spMeditate');
       "
     ></button>
 
@@ -120,6 +125,11 @@
         <button @:click="showPopupIt('showPopUp', 'spSofa'); Action()">POPUP OUT</button>
       </div>    
 
+      <div class="PopUp" v-else-if="spMeditate">
+        <h1>TITUL Meditacio</h1>
+        <img src="..\assets\plant.jpg" />
+        <button @:click="showPopupIt('showPopUp', 'spMeditate'); Action()">POPUP OUT</button>
+      </div>  
 
       <div class="PopUp" v-else-if="clNot1">
         <h1>NOTIFICACIO 1</h1>

@@ -39,7 +39,7 @@ export default {
 
   watch:{
     actions(value){
-      if(value==5){
+      if(value>=5){
         this.$router.push("/info")
       } 
     },
