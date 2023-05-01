@@ -17,7 +17,6 @@
     top: 50%;
     left: 50%;
     outline: solid 1px black;
-    
     height: 600px;
     width: 800px;
   }

@@ -1,37 +1,11 @@
 <template>
-  <nav class="start">
-
+  <div class="start">
     <router-view/>    
-  </nav>
-  <router-link to="/">Home</router-link>|
-  <router-link to="/room"  v-if="$route.path != '/room'" >Room</router-link>|
-    <router-link to="/info">Info</router-link>
+  </div>
+  <router-link to= "/">Home</router-link>|
+  <router-link to= "room">Room</router-link>|
+  <router-link to= "info">Info</router-link>
 </template>
-
-<script>
-
-export default {
-  setup() {
-    return{};    
-  },
-
-  data(){
-    return{
-      b: 0,
-    }
-  },
-  watch:{
-    b(value){
-      if(value==5){
-        this.$router.push("/room")
-      } 
-    },
-  },
-  methods: {
-
-  }
-}
-</script>
 
 <style scoped>
   .start {
