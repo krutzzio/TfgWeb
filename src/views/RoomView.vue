@@ -91,49 +91,49 @@
       
       <div class="PopUp" v-if="spBed">
         <h1>TITUL BED</h1>
-        <img src="..\assets\bed.jpg" />
+        <img src="..\assets\bed\bed1.jpg" />
         <button @:click="showPopupIt('showPopUp', 'spBed'); Action();">POPUP OUT</button>
       </div>
 
       <div class="PopUp" v-else-if="spPlant">
         <h1>TITUL PLANTA</h1>
-        <img src="..\assets\plant.jpg" />
+        <img src="..\assets\plant\plant1.jpg" />
         <button @:click="showPopupIt('showPopUp', 'spPlant'); Action()">POPUP OUT</button>
       </div>
 
       <div class="PopUp" v-else-if="spTable">
         <h1>TITUL TABLE</h1>
-        <img src="..\assets\plant.jpg" />
+        <img src="..\assets\table\table1.jpg" />
         <button @:click="showPopupIt('showPopUp', 'spTable'); Action()">POPUP OUT</button>
       </div>
 
       <div class="PopUp" v-else-if="spSkate">
         <h1>TITUL SKATE</h1>
-        <img src="..\assets\plant.jpg" />
+        <img src="..\assets\skate\skate1.jpg" />
         <button @:click="showPopupIt('showPopUp', 'spSkate'); Action()">POPUP OUT</button>
       </div>
 
       <div class="PopUp" v-else-if="spDoor">
         <h1>TITUL DOOR</h1>
-        <img src="..\assets\plant.jpg" />
+        <img src="..\assets\plant\plant.jpg" />
         <button @:click="showPopupIt('showPopUp', 'spDoor'); Action()">POPUP OUT</button>
       </div>
 
       <div class="PopUp" v-else-if="spSofa">
         <h1>TITUL SOFA</h1>
-        <img src="..\assets\plant.jpg" />
+        <img src="..\assets\sofa\sofa1.jpg" />
         <button @:click="showPopupIt('showPopUp', 'spSofa'); Action()">POPUP OUT</button>
       </div>    
 
       <div class="PopUp" v-else-if="spMeditate">
         <h1>TITUL Meditacio</h1>
-        <img src="..\assets\plant.jpg" />
+        <img src="..\assets\meditate\meditate1.jpg" />
         <button @:click="showPopupIt('showPopUp', 'spMeditate'); Action()">POPUP OUT</button>
       </div>  
 
       <div class="PopUp" v-else-if="clNot1">
         <h1>NOTIFICACIO 1</h1>
-        <img src="..\assets\plant.jpg" />
+        <img src="..\assets\mobile\mobile1.jpg" />
         <button @:click="showPopupIt('showPopUp', 'clNot1'); Action()">POPUP OUT</button>
       </div>
 

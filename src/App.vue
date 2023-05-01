@@ -3,8 +3,8 @@
     <router-view/>    
   </div>
   <router-link to= "/">Home</router-link>|
-  <router-link to= "room">Room</router-link>|
-  <router-link to= "info">Info</router-link>
+  <router-link to= "/room">Room</router-link>|
+  <router-link to= "/info">Info</router-link>
 </template>
 
 <style scoped>

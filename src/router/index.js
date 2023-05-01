@@ -15,7 +15,7 @@ const routes = [
     component: RoomView
   },
   {
-    path: '/info=:NumeroSecret=:Secret',
+    path: '/info/:NumeroSecret/:Secret',
     name: 'info',
     component: InfoView,
     props:true,
