@@ -1,7 +1,6 @@
 
 
 export default {
-
   
   setup() {
     return {};
@@ -22,7 +21,7 @@ export default {
       spMeditate: false,
 
       NumeroSecret: 11,
-      Secret: 1,
+      Secret: 6,
 
 
       showNot1: false,
@@ -43,7 +42,8 @@ export default {
   watch:{
     actions(value){
       if(value>=5){
-        this.$router.push({ name: 'info', params: {NumeroSecret: this.NumeroSecret, Secret:this.Secret}})
+        this.$router.push({ name: 'info', params: {NumeroSecret: this.NumeroSecret, 
+          Secret:this.Secret}})
       } 
     },
   },

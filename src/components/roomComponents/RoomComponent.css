@@ -16,8 +16,7 @@ body {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  outline: solid 1px black;
-
+  /*outline: solid 1px black;*/
 }
 
 .btn.Bed{
