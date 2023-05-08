@@ -1,15 +1,11 @@
-
-
 export default {
-  
+
   setup() {
     return {};
   },
 
   data() {
     return {
-      cont: 600,
-
       showPopUp: false,
       
       spBed: false,
@@ -19,10 +15,6 @@ export default {
       spSofa: false,
       spSkate: false,
       spMeditate: false,
-
-      NumeroSecret: 11,
-      Secret: 6,
-
 
       showNot1: false,
       showNot2: false,
@@ -34,6 +26,8 @@ export default {
       clNot1:false,
 
       actions: 0,
+      NumeroSecret: 7,
+      FoMo: 6,
 
       notSelect: Math.random()*6,
     };
@@ -43,7 +37,7 @@ export default {
     actions(value){
       if(value>=5){
         this.$router.push({ name: 'info', params: {NumeroSecret: this.NumeroSecret, 
-          Secret:this.Secret}})
+          FoMo:this.FoMo}})
       } 
     },
   },

@@ -1,14 +1,15 @@
-body {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
 .room {
+  position: absolute;
   background-color: rgb(128, 69, 42);
-  background-image: url("C:\Users\geryb\Documents\Proves Vue\proves\src\assets\roomColor.jpg");
+  background-image: url("@/assets/room.jpg");
   background-repeat: no-repeat;
   background-position: center;
   outline: solid 1px black;
-  height: 600px;
-  width: 800px;
+  height: 800px;
+  width: 1200px;
+  top: 10%;
+  left: 10%;
+  border-radius: 2%;
 }
 
 .btn{
@@ -20,52 +21,59 @@ body {
 }
 
 .btn.Bed{
-  width: 235px;
-  height: 350px;
-  top: 50px;
-  left: 30px;
+  width: 28.3%;
+  height: 64%;
+  top: 4%;
+  left: 5%;
 }
 
 .btn.Skate{
-  width: 120px;
-  height: 40px;
-  top: 460px;
-  left: 90px;
+  width: 15%;
+  height: 7%;
+  top: 79.5%;
+  left: 12%;
 }
 
 .btn.Plant{
-  width: 65px;
-  height: 65px;
-  top: 470px;
-  left: 360px;
+  width: 8%;
+  height: 11%;
+  top: 81.5%;
+  left: 45%;
 }
 
 .btn.Table{
-  width: 215px;
-  height: 111px;
-  top: 45px;
-  left: 315px;
+  width: 27%;
+  height: 21%;
+  top: 3.2%;
+  left: 39.5%;
 }
 
 .btn.Sofa{
-  width: 150px;
-  height: 185px;
-  top: 200px;
-  left: 610px;
+  width: 18.3%;
+  height: 34.5%;
+  top: 32%;
+  left: 75.5%;
 }
 
 .btn.Door{
-  width: 135px;
-  height: 90px;
-  top: 465px;
-  left: 585px;
+  width: 17%;
+  height: 16.2%;
+  top: 81.5%;
+  left: 73%;
 }
 
 .btn.Meditate{
-  width: 170px;
-  height: 110px;
-  top: 250px;
-  left: 335px;
+  width: 21%;
+  height: 20%;
+  top: 41%;
+  left: 42%;
+}
+
+.btn.Mobile{
+  width: 2%;
+  height: 4%;
+  top: 15%;
+  left: 41.5%;
 }
 
 .not{
@@ -96,10 +104,10 @@ body {
 }
 
 .not.n4{
-  top: 60px;
-  left: 450px;
-  width: 250px;
-  height: 150px;
+  top: 40%;
+  left: 10%;
+  width: 50%;
+  height: 10%;
 }
 
 .not.n5{
@@ -130,6 +138,7 @@ body {
 
 .PopUp {
   position: fixed;
+  text-align: center;
   top: 50%;
   left: 50%;
   z-index: 100;
@@ -137,4 +146,19 @@ body {
   padding: 20px;
   outline: solid 1px black;
   background: rgb(255, 255, 255);
+  width: 45%;
+}
+
+.btnPop{
+  text-align: right;
+  margin: 1%;
+  padding: 1%;
+}
+
+.img{
+  width: auto;
+}
+
+.Not{
+  width: 40%;
 }

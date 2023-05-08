@@ -2,6 +2,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import RoomView from '../views/RoomView.vue'
 import InfoView from '../views/InfoView.vue'
+import Preguntes from '../views/Preguntes.vue'
+
 
 const routes = [
   {
@@ -15,10 +17,15 @@ const routes = [
     component: RoomView
   },
   {
-    path: '/info/:NumeroSecret/:Secret',
+    path: '/info/:NumeroSecret/:FoMo',
     name: 'info',
     component: InfoView,
     props:true,
+  },
+  {
+    path: '/preg',
+    name: 'preg',
+    component: Preguntes,
   }
 ]
 
