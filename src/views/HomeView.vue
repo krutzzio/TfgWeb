@@ -1,11 +1,24 @@
 <template>
   <div class="menu">
-    <router-link type="button" class="btn btn-primary" to="/preg"
+    <router-link
+      type="button"
+      class="btn btn-primary"
+      :to="{name: 'intro', params: {index: index, fomo: fomo}}"
       >Començar</router-link
     >
   </div>
 </template>
   
+<script>
+export default {
+  data() {
+    return {
+      fomo: 75,
+      index: 0,
+    };
+  },
+};
+</script>
 
 
 <style scoped>

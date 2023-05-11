@@ -83,61 +83,85 @@
 }
 
 .not.n1{
-  top: 100px;
-  left: 500px;
-  width: 300px;
-  height: 100px;
+  top: 10%;
+  left: 10%;
+  width: 10%;
+  height: 10%;
 }
 
 .not.n2{
-  top: 400px;
-  left: 200px;
-  width: 150px;
-  height: 200px;
+  top: 20%;
+  left: 20%;
+  width: 20%;
+  height: 20%;
 }
 
 .not.n3{
-  top: 250px;
-  left: 100px;
-  width: 230px;
-  height: 150px;
+  top: 30%;
+  left: 30%;
+  width: 30%;
+  height: 30%;
 }
 
 .not.n4{
   top: 40%;
-  left: 10%;
-  width: 50%;
-  height: 10%;
+  left: 40%;
+  width: 40%;
+  height: 40%;
 }
 
 .not.n5{
-  top: 100px;
-  left: 50px;
-  width: 300px;
-  height: 100px;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  height: 50%;
 }
 
 .not.n6{
-  top: 450px;
-  left: 300px;
-  width: 300px;
-  height: 100px;
+  top: 60%;
+  left: 60%;
+  width: 60%;
+  height: 60%;
+}
+
+.not.n7{
+  top: 60%;
+  left: 60%;
+  width: 60%;
+  height: 60%;
+}
+.not.n8{
+  top: 60%;
+  left: 60%;
+  width: 60%;
+  height: 60%;
+}
+.not.n9{
+  top: 60%;
+  left: 60%;
+  width: 60%;
+  height: 60%;
+}
+.not.n{
+  top: 60%;
+  left: 60%;
+  width: 60%;
+  height: 60%;
 }
 
 .PopUpOverlay {
   position: absolute;
-
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: 99;
-
+  border-radius: 2%;
   background: rgba(0, 0, 0, 0.7);
 }
 
 .PopUp {
-  position: fixed;
+  position: absolute;
   text-align: center;
   top: 50%;
   left: 50%;
@@ -146,7 +170,8 @@
   padding: 20px;
   outline: solid 1px black;
   background: rgb(255, 255, 255);
-  width: 45%;
+  margin-right: 10%;
+  border-radius: 2%;
 }
 
 .btnPop{

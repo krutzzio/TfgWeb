@@ -1,9 +1,9 @@
 export default {
-    props: ['NumeroSecret, FoMo'],
-
     data() {
         return {
             Answered: false,
+            index: this.$route.params.index,
+            fomoReceiver: this.$route.params.fomoLv,
             selectedAns: ' ',
             questions: [
                 {
@@ -17,7 +17,7 @@ export default {
                     correct: 'a',
                 }
 
-            ]
+            ],
         }
 
     },

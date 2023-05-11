@@ -69,12 +69,9 @@
     ></button>
 
     <div class="PopUpOverlay" v-if="showPopUp"></div>
-
-    <transition name="fade">
       <div class="PopUp" v-if="spBed">
         <h3>
-          Prefereixes estirar-te al llit durant una estona per descansar.
-          Mentrestant disfrutes de una estona sense preocupar-te de res.
+          {{ popUpText[0].bed }}
         </h3>
         <img src="@/assets\bed\bed1.jpg" />
         <button
@@ -82,6 +79,7 @@
           @:click="
             showPopupIt('showPopUp', 'spBed');
             Action();
+            fomoDown()
           "
         >
           Torna a l'habitació
@@ -90,8 +88,7 @@
 
       <div class="PopUp" v-else-if="spPlant">
         <h3>
-          Recordes que tens una planta nova i la prepares per posar-la a la teva
-          habitació.
+          {{ popUpText[0].plant }}
         </h3>
         <img src="@/assets\plant\plant1.jpg" />
         <button
@@ -99,6 +96,7 @@
           @:click="
             showPopupIt('showPopUp', 'spPlant');
             Action();
+            fomoDown()
           "
         >
           Torna a l'habitació
@@ -106,13 +104,16 @@
       </div>
 
       <div class="PopUp" v-else-if="spTable">
-        <h1>TITUL TABLE</h1>
+        <h3>
+          {{ popUpText[0].table }}
+        </h3>
         <img src="@/assets\table\table1.jpg" />
         <button
           class="btnPop"
           @:click="
             showPopupIt('showPopUp', 'spTable');
             Action();
+            fomoDown()
           "
         >
           Torna a l'habitació
@@ -120,13 +121,16 @@
       </div>
 
       <div class="PopUp" v-else-if="spSkate">
-        <h1>TIToL SKATE</h1>
+        <h3>
+          {{ popUpText[0].skate }}
+        </h3>
         <img src="@/assets\skate\skate1.jpg" />
         <button
           class="btnPop"
           @:click="
             showPopupIt('showPopUp', 'spSkate');
             Action();
+            fomoDown()
           "
         >
           Torna a l'habitació
@@ -141,6 +145,7 @@
           @:click="
             showPopupIt('showPopUp', 'spDoor');
             Action();
+            fomoDown()
           "
         >
           Torna a l'habitació
@@ -155,6 +160,7 @@
           @:click="
             showPopupIt('showPopUp', 'spSofa');
             Action();
+            fomoDown()
           "
         >
           Torna a l'habitació
@@ -169,6 +175,7 @@
           @:click="
             showPopupIt('showPopUp', 'spMeditate');
             Action();
+            fomoDown()
           "
         >
           Torna a l'habitació
@@ -178,19 +185,19 @@
       <div class="PopUp" v-else-if="clNot1">
         <h1>NOTIFICACIO 1</h1>
         <img class="img Not" src="@/assets\mobile\mobile1.jpg" />
-        <div class="exem">
+
           <button
             class="btnPop"
             @:click="
               showPopupIt('showPopUp', 'clNot1');
               Action();
+              fomoUp()
             "
           >
             Torna a l'habitació
           </button>
-        </div>
+        
       </div>
-    </transition>
   </div>
 </template>
 
