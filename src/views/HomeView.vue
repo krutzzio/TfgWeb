@@ -1,7 +1,6 @@
 <template>
   <div class="menu">
     <router-link
-      class="btn btn-primary"
       :to="{name: 'intro', params: {index: index, fomo: fomo}}"
       >Començar</router-link
     >
