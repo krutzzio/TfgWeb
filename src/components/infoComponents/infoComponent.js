@@ -24,8 +24,11 @@ export default {
     methods: {
         selected(c) {
             this.selectedAns = c.target.value;
-            console.log(this.selectedAns);
             this.Answered = true;
+        },
+        incrementIndex() {
+            this.index++;
         }
+
     }
 }

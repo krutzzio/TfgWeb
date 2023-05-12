@@ -61,11 +61,14 @@
           </h1>
         </div>
       </div>
+      <button @click="incrementIndex()"></button>
       <router-link
+      @click="incrementIndex()"
         v-if="Answered"
         style="left: 90%; top: 93%"
         type="button"
         class="btn btn-primary"
+        
         :to="{ name: 'intro', params: { index: index, fomo: fomoReceiver } }"
         >Passar la Nit</router-link
       >
