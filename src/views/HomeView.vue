@@ -32,5 +32,13 @@ export default {
   left: 10%;
   border-radius: 2%;
 }
+
+.brnComençar{
+  width: 10%;
+  height: 30%;
+
+
+}
+
 </style>
   
