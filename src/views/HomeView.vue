@@ -1,7 +1,8 @@
 <template>
-  <div class="menu">
+  <div class="menuContainer">
     <router-link
-      :to="{name: 'intro', params: {index: index, fomo: fomo}}"
+      class="btn btn-primary d-flex align-items-center btn-lg btnHome"
+      :to="{ name: 'intro', params: { index: index, fomo: fomo } }"
       >Començar</router-link
     >
   </div>
@@ -20,8 +21,9 @@ export default {
 
 
 <style scoped>
-.menu {
+.menuContainer {
   position: absolute;
+  background-color: rgb(245, 245, 220);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -30,15 +32,15 @@ export default {
   width: 1200px;
   top: 10%;
   left: 10%;
-  border-radius: 2%;
+  border-radius: 15px;
 }
 
-.brnComençar{
-  width: 10%;
-  height: 30%;
-
-
+.btnHome {
+  justify-content: center;
+  width: 30%;
+  height: 10%;
+  outline: solid 2px rgb(6, 18, 73);
+  font-size: 200%;
 }
-
 </style>
   

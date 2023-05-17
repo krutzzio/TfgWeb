@@ -1,16 +1,27 @@
 <template>
-  <div class="info">
+  <div class="infoContainer">
     <div>
       <div class="wrapper">
         <div>
-          <div v-if="fomoReceiver >= 6" class="img1"></div>
-          <div v-else-if="fomoReceiver < 6" class="img2"></div>
+          <div
+            :class="[
+              { img1: fomoReceiver <= 15 },
+              { img2: fomoReceiver <= 45 && fomoReceiver > 15 },
+              { img3: fomoReceiver <= 75 && fomoReceiver > 45 },
+              { img4: fomoReceiver <= 105 && fomoReceiver > 75 },
+              { img5: fomoReceiver < 135 && fomoReceiver > 105 },
+              { img6: fomoReceiver >= 135 },
+            ]"
+          ></div>
         </div>
         <div class="questionContainer">
-          <h1>{{ questions[0]["question"] }}</h1>
+          <h1>{{ questions[index]["question"] }}</h1>
           <label
             :for="key"
             style="
+              text-align: center;
+              align-items: center;
+              justify-content: center;
               display: block;
               outline: solid 1px black;
               margin: 5%;
@@ -18,7 +29,7 @@
               width: 50%;
               box-shadow: 2px 2px;
             "
-            v-for="(answer, key) in questions[0]['answer']"
+            v-for="(answer, key) in questions[index]['answer']"
             v-bind:key="answer.id"
             :class="[
               { answer: selectedAns == ' ' },
@@ -26,15 +37,15 @@
                 'answer nonSelected':
                   selectedAns != ' ' &&
                   selectedAns != key &&
-                  key != questions[0]['correct'],
+                  key != questions[index]['correct'],
               },
               {
                 'answer Incorrect':
-                  selectedAns == key && key != questions[0]['correct'],
+                  selectedAns == key && key != questions[index]['correct'],
               },
               {
                 'answer Correct':
-                  selectedAns != ' ' && key == questions[0]['correct'],
+                  selectedAns != ' ' && key == questions[index]['correct'],
               },
             ]"
           >
@@ -51,27 +62,28 @@
         </div>
       </div>
 
-      <div style="text-align: center">
+      <div class="wrapper">
         <div class="sabiesContainer">
-          <h1>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Accusantium, sed. Iste deserunt voluptatem quia sapiente nihil quasi
-            assumenda voluptates dolorem maiores adipisci molestias ratione sed
-            corrupti eaque ipsa, alias nisi!
+          <h1 style="text-align: center">
+            Sabies que...<br />
+            {{ sabies[index] }}
           </h1>
         </div>
       </div>
-      <button @click="incrementIndex()"></button>
-      <router-link
-      @click="incrementIndex()"
-        v-if="Answered"
-        style="left: 90%; top: 93%"
-        type="button"
-        class="btn btn-primary"
-        
-        :to="{ name: 'intro', params: { index: index, fomo: fomoReceiver } }"
-        >Passar la Nit</router-link
+      <button
+        v-if="Answered && index < 2"
+        class="btn btn-primary d-flex align-items-center btn-lg btnInfo"
+        @click="incrementIndex()"
       >
+        Passar la nit
+      </button>
+      <button
+        v-if="Answered && index == 2"
+        class="btn btn-primary d-flex align-items-center btn-lg btnInfo"
+        @click="incrementIndex()"
+      >
+        Resultats
+      </button>
     </div>
   </div>
 </template>
