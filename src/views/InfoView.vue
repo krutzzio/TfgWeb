@@ -82,7 +82,7 @@
       <div class="wrapper">
         <div class="sabiesContainer">
           <h2 style="text-align: center">
-            Sabies que...<br />
+            Sabies què...<br />
             {{ sabies[index] }}
           </h2>
         </div>

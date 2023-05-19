@@ -40,7 +40,7 @@
         <h3 v-else-if="fomo < 135 && fomo > 105">
           {{ resultat[4] }}
         </h3>
-        <h3 v-else-if="fomoReceiver >= 135">{{ resultat[5] }}</h3>
+        <h3 v-else-if="fomo >= 135"> {{ resultat[5] }}</h3>
       </div>
 
       <div :class="[
@@ -150,7 +150,7 @@ export default {
   margin-left: 5%;
   padding: 1%;
   width: 70%;
-  height: 110%;
+  height: 120%;
   outline: solid 1px black;
   border-radius: 2%;
   background-color: rgb(156, 216, 224);
