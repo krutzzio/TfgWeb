@@ -75,15 +75,6 @@
   left: 41.5%;
 }
 
-/*
-Mira la nova imatge que han penjat. Sigues el primer en comentar.
-Has rebut un Nou missatge. Entra per chatejar
-Estan parlant de les noves tendencies. Entra ara per discutir i participar.
-Corre ara et toca penjar la foto diaria.
-Escolta ara la nova canço del teu artista preferit
-
-
-*/
 
 .not {
   cursor: pointer;
@@ -92,7 +83,7 @@ Escolta ara la nova canço del teu artista preferit
 }
 
 .not.n1 {
-  background-image: url("@/assets/Not1.jpg");
+  background-image: url("@/assets/notifications/Logos/Not1.jpg");
   background-repeat: no-repeat;
   background-position: 0% 0%;
   top: 30%;
@@ -102,7 +93,7 @@ Escolta ara la nova canço del teu artista preferit
 }
 
 .not.n2 {
-  background-image: url("@/assets/Not2.jpg");
+  background-image: url("@/assets/notifications/Logos/Not2.jpg");
   background-repeat: no-repeat;
   background-position: 0% 0%;
   top: 30%;
@@ -112,7 +103,7 @@ Escolta ara la nova canço del teu artista preferit
 }
 
 .not.n3 {
-  background-image: url("@/assets/Not3.jpg");
+  background-image: url("@/assets/notifications/Logos/Not3.jpg");
   background-repeat: no-repeat;
   background-position: 0% 0%;
   top: 10%;
@@ -122,7 +113,7 @@ Escolta ara la nova canço del teu artista preferit
 }
 
 .not.n4 {
-  background-image: url("@/assets/Not4.jpg");
+  background-image: url("@/assets/notifications/Logos/Not4.jpg");
   background-repeat: no-repeat;
   background-position: 0% 0%;
   top: 60%;
@@ -132,7 +123,7 @@ Escolta ara la nova canço del teu artista preferit
 }
 
 .not.n5 {
-  background-image: url("@/assets/Not5.jpg");
+  background-image: url("@/assets/notifications/Logos/Not5.jpg");
   background-repeat: no-repeat;
   background-position: 0% 0%;
   top: 50%;
@@ -142,6 +133,9 @@ Escolta ara la nova canço del teu artista preferit
 }
 
 .not.n6 {
+  background-image: url("@/assets/notifications/Logos/Not6.jpg");
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
   top: 25%;
   left: 13%;
   width: 37%;
@@ -149,6 +143,9 @@ Escolta ara la nova canço del teu artista preferit
 }
 
 .not.n7 {
+  background-image: url("@/assets/notifications/Logos/Not7.jpg");
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
   top: 55%;
   left: 10%;
   width: 30%;
@@ -156,6 +153,9 @@ Escolta ara la nova canço del teu artista preferit
 }
 
 .not.n8 {
+  background-image: url("@/assets/notifications/Logos/Not8.jpg");
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
   top: 50%;
   left: 50%;
   width: 20%;
@@ -163,6 +163,9 @@ Escolta ara la nova canço del teu artista preferit
 }
 
 .not.n9 {
+  background-image: url("@/assets/notifications/Logos/Not9.jpg");
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
   top: 5%;
   left: 47%;
   width: 40%;
@@ -170,10 +173,63 @@ Escolta ara la nova canço del teu artista preferit
 }
 
 .not.n10 {
+  background-image: url("@/assets/notifications/Logos/Not10.jpg");
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
   top: 50%;
   left: 75%;
   width: 15%;
   height: 45%;
+}
+
+.not.n11 {
+  background-image: url("@/assets/notifications/Logos/Not8.jpg");
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  top: 10%;
+  left: 50%;
+  width: 20%;
+  height: 42%;
+}
+
+.not.n12 {
+  background-image: url("@/assets/notifications/Logos/Not9.jpg");
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  top: 75%;
+  left: 47%;
+  width: 40%;
+  height: 19%;
+}
+
+.not.n13 {
+  background-image: url("@/assets/notifications/Logos/Not10.jpg");
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  top: 40%;
+  left: 15%;
+  width: 15%;
+  height: 45%;
+}
+
+.not.n14 {
+  background-image: url("@/assets/notifications/Logos/Not1.jpg");
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  top: 7%;
+  left: 75%;
+  width: 215px;
+  height: 520px;
+}
+
+.not.n15 {
+  background-image: url("@/assets/notifications/Logos/Not6.jpg");
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  top: 5%;
+  left: 5%;
+  width: 37%;
+  height: 25%;
 }
 
 .PopUpOverlay {
@@ -201,19 +257,6 @@ Escolta ara la nova canço del teu artista preferit
   border-radius: 2%;
 }
 
-.PopUpV {
-  position: absolute;
-  text-align: center;
-  top: 50%;
-  left: 50%;
-  z-index: 100;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  outline: solid 1px black;
-  background: rgb(255, 255, 255);
-  margin-right: 10%;
-  border-radius: 2%;
-}
 
 .img {
   width: auto;

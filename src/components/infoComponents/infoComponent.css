@@ -14,58 +14,37 @@
   margin: 1%;
 }
 
-.img1 {
-  background-image: url("@/assets/cara_ejemplo1.jpg");
+.img {
+  margin-top: 5%;
+  background-size: 50%;
   background-repeat: no-repeat;
   background-position: center;
-  height: 500px;
-  width: 500px;
-  border-radius: 2%;
+  height: 50%;
 }
 
-.img2 {
-  background-image: url("@/assets/cara_ejemplo2.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 500px;
-  width: 500px;
-  border-radius: 2%;
+.img.i1 {
+  background-image: url("@/assets/emogis/im1.png");
 }
 
-.img3 {
-  background-image: url("@/assets/im3.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 500px;
-  width: 500px;
-  border-radius: 2%;
+.img.i2 {
+  background-image: url("@/assets/emogis/im2.png");
 }
 
-.img4 {
-  background-image: url("@/assets/im4.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 500px;
-  width: 500px;
-  border-radius: 2%;
+.img.i3 {
+  background-image: url("@/assets/emogis/im3.png");
 }
 
-.img5 {
-  background-image: url("@/assets/im5.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 500px;
-  width: 500px;
-  border-radius: 2%;
+.img.i4 {
+  background-image: url("@/assets/emogis/im4.png");
 }
 
-.img6 {
-  background-image: url("@/assets/im6.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 500px;
-  width: 500px;
-  border-radius: 2%;
+.img.i5 {
+  background-image: url("@/assets/emogis/im5.png");
+
+}
+
+.img.i6 {
+  background-image: url("@/assets/emogis/im6.png");
 }
 
 .questionContainer {
@@ -84,11 +63,24 @@
   left: 50%;
   width: 85%;
   min-height: 100px;
-  margin-top: 1%;
+  margin-top: 2%;
   outline: solid 1px black;
   border-radius: 10px;
   background-color: rgb(133, 194, 93);
   box-shadow: 10px 10px;
+  padding: 1%;
+}
+
+.emogiContainer {
+  position: relative;
+  text-align: center;
+  width: 500px;
+  height: 500px;
+  outline: solid 1px black;
+  border-radius: 10px;
+  background-color: rgb(202, 236, 178);
+  box-shadow: 10px 10px;
+  padding: 1%;
 }
 
 .btnInfo {
