@@ -54,7 +54,7 @@
       </div>
 
       <h3> Si us plau completa aquest <a
-        href="https://forms.gle/9V17mqGC91SjvNoU8"
+        href="https://forms.gle/St4z5hTN2ejCSx2P9"
         target="_blank"
       >
         formulari</a> per acabar.</h3>

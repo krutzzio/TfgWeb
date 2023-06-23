@@ -9,7 +9,7 @@
   <div class="backgroundForm" v-if="sRouter">
     <div class="formContainer" v-if="sRouter">
       <h2 style="margin: 5%;">Si us plau, abans de començar ompliu el següent <a
-        href="https://forms.gle/GrEQz3siwvi3LzLS7"
+        href="https://forms.gle/VQUru7HvXcjnJNri6"
         target="_blank"
         @click="showForm()"
       >
